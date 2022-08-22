@@ -1,6 +1,6 @@
 import random
 from curses import A_UNDERLINE
-from curselect import curselect
+import curselect
 
 def main():
 
