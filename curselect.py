@@ -73,6 +73,11 @@ class CurSelect:
         curses.echo()
         curses.endwin()
 
+    # we want to stop curses when a script finishes
+    def __del__(self):
+        if self.auto_init:
+            self._end_curses()
+
     def _clear_line(self, line_num):
         self.window.move(line_num, 0)
         self.window.clrtoeol()
