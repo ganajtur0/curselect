@@ -1,6 +1,9 @@
 import random
 from curses import A_UNDERLINE
 import curselect
+# ^ use this if the curselect.py file is in your current scope
+# from curselect import curselect
+# ^ and use this if you downloaded the package
 
 def main():
 
