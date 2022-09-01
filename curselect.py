@@ -66,6 +66,7 @@ class CurSelect:
         return stdscr
 
     def _end_curses(self):
+        self._clear_line(0)
         self._clear()
         curses.curs_set(True)
         curses.nocbreak()
